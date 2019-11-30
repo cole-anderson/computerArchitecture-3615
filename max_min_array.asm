@@ -135,9 +135,7 @@ addi $t0, $a0, 0
   j loop
 ret: jr $ra
 
-
 end_sort:
-
 
 addi $s1, $zero, 0
 la $t0, list
@@ -197,9 +195,7 @@ addi $t0, $a0, 0
   j loopm
 ret2: jr $ra
 
-
 end_sort2:
-
 
 addi $s1, $zero, 0
 la $t0, list
@@ -212,19 +208,10 @@ lw $a0, 0($t3)
 li $v0, 1 #li: load integer
 syscall
 
-
-
-
-
 ##END
 #exit function
 li $v0, 10 #v0=10, exit function
 syscall
-
-
-
-
-
 
 .data
 list:.space 100 #maximum size of list is 25, you can change this definition
@@ -241,7 +228,6 @@ prompt_space: .asciiz " "
 prompt_new: .asciiz "\n"
 
 prompt_output_element: .asciiz "the list are \n"
-
 
 #dataflag2: .word 0x88881111
 Input: .space 20 # allocate 20 bytes of storage for the input string
