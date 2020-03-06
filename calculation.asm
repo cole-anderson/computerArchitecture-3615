@@ -1,6 +1,5 @@
 .data
 
-
 input1: .asciiz "Enter integer one "
 input2: .asciiz "Enter integer two "
 output: .asciiz  " The addition result is: "
@@ -34,8 +33,6 @@ syscall
 li $v0, 5
 syscall
 move $t1, $v0
-
-#####
 
 #output
 li $v0, 4
@@ -77,7 +74,6 @@ div $s0, $t0, $t1
 li $v0, 1
 add $a0, $zero, $s0
 syscall
-
 
 li $v0, 10
 syscall
